@@ -1,1 +1,11 @@
 GET http://localhost:3000/rackets.json
+
+### Tenni Create
+Post http://localhost:3000/rackets.json
+Content-Type: application/json
+
+{
+  "racket": "Wilson",
+  "head": "200",
+  "weight": "300"
+}
