@@ -9,3 +9,16 @@ Content-Type: application/json
   "head": "200",
   "weight": "300"
 }
+
+### Tenni Show
+GET http://localhost:3000/rackets/1.json
+
+### Tenni update
+PATCH http://localhost:3000/localhost:3000/rackets/1.json
+Content-Type: application/json
+
+{
+  "racket": "Prince",
+  "head": "200",
+  "weight": "300"
+}

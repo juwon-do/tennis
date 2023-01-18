@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   # root "articles#index"
   get "/rackets" => "rackets#index"
   post "/rackets" => "rackets#create"
+  get "/rackets/:id" => "rackets#show"
+  patch "/rackets/:id" => "rackets#update"
 end

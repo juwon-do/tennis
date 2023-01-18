@@ -11,4 +11,18 @@ class RacketsController < ApplicationController
     )
     render json: racket.as_json
   end
+  def show
+    racket = Tenni.find_by(id: params[:id])
+    render json: racket.as_json
+  end
+  def update
+    racket = Tenni.find_by(id: params[:id])
+    racket: params[:racket],
+    head: params[:head],
+    weight: params[:weight]
+    racket.save
+  end
 end
+
+
+
